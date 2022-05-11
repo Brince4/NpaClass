@@ -1,0 +1,74 @@
+Class libary(.NET Framework) - to rabš najprej odpret
+
+//SAMO ZA JAZBECA//
+MORS KLIKNT CREATE
+//SAMO ZA JAZBECA//
+
+Project -> add user control
+Poj boš kle mogu neki naredit, kšn gumb al pa timer
+Poj pa na sceno 2x klikneš pa se odpre 
+Poj pa uzun kode das spremenlivko bool pa jo poimenujes: fax = true;
+
+!!ČE BO TIMER MORS NAŠTIMAT ENABLED = TRUE ZATO DA BO DELAL!!
+
+poj pa nrdiš zanko IF
+
+IF(FAX == TRUE)
+{
+	button1.BackColor = Color.Red;
+
+
+}
+else
+{
+	button1.backColor = Color.Black
+}
+fax = !fax;
+
+
+poj  zazenš pa če je error poj je prov pa dela
+
+Poj pa odpres nov windows form app. Na ime desn klik poj pa ADD -> REFERENCE
+
+K se ti odpre greš na browse pa najdes kam si dau un classLibary. V prenosih bo ta mapa
+in poj greš not ClassLibary1 -> bin -> debug -> ClassLibary.dll
+
+Na levo tm k maš gumbe pa scene nrdiš desn klik pa das Choose item. Čakas da se nalovda est. 30sec - 1 min DISCLAIMER: ČE JE VEČ NE PANIČART
+
+Klikneš na browse in spet najdes uno mapo k je class not. K prtisneš se ti not pokaze in sam klikneš ok.
+
+Zej ga maš v TOOLBOXU čist spodej
+
+Če bo tabela za narest jo tko nrdis:
+
+public Form1()
+{
+	InitializeComponent();
+	int[] ocene = {1, 2, 1, 2, 1, 5}; --- To ocene k grejo povrst kokr so imena uspod
+	string[] ime = { "aljo, "brin", "jan", "gal", "mart", "terz"};
+	
+	for(int i = 0; i< ocene.Length; i++)
+	{
+		
+		dataGridView1.Columns.Add("imena", ime[i]);
+		dataGridView1.Rows[0].Cells[i].Value= ocene[i];
+
+		
+	
+	}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
